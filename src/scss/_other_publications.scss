@@ -1,0 +1,25 @@
+.b-other-publications {
+  border-top: 3px solid #e8e8e8;
+  .publications {
+    overflow: hidden;
+    margin: 20px 0;
+    .other_publications {
+      text-transform: uppercase;
+      float: left;
+      width: 50%;
+      font-size: 24px;
+      color: $dark-grey;
+    }
+    .all_publications {
+      float: right;
+      width: 50%;
+      text-align: right;
+      a {
+        text-transform: uppercase;
+        color: $dark-grey;
+        text-decoration: none;
+        font-size: 13px;
+      }
+    }
+  }
+}

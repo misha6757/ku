@@ -1,0 +1,30 @@
+.b-reviews {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  overflow: hidden;
+  .review {
+    width: 49%;
+    margin-bottom: 30px;
+    .items {
+      overflow: hidden;
+      margin-bottom: 17px;
+      .user-name {
+        display: block;
+        font-size: 12px;
+        text-transform: uppercase;
+        float: left;
+      }
+      .data {
+        display: block;
+        font-size: 13px;
+        float: right;
+      }
+    }
+    .contain-review {
+      background: #f8f8f8;
+      color: #999999;
+      padding: 20px;
+    }
+  }
+}

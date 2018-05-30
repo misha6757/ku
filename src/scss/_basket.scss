@@ -1,0 +1,352 @@
+.title-filter {
+  float: left;
+  font-size: 24px;
+  color: #4e4e4e;
+  text-transform: uppercase;
+}
+
+.remove-all-products {
+  display: block;
+  float: right;
+  cursor: pointer;
+  padding: 5px;
+  position: relative;
+  right: 0;
+  top: 0;
+}
+
+.basket-products {
+  overflow: hidden;
+  margin: 33px 0 30px 0;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #e8e8e8;
+  span {
+    font-size: 12px;
+    color: #959595;
+    text-transform: uppercase;
+  }
+}
+
+.by_products {
+  overflow: hidden;
+}
+
+.photo-product {
+  border: 1px solid #e4e7ed;
+  figure {
+    max-width: 140px;
+    height: 140px;
+    margin: 0;
+    img {
+      height: 100%;
+      display: block;
+      text-align: center;
+      margin: 0 auto;
+    }
+  }
+}
+
+.data-products {
+  margin-left: 6%;
+  .name-product {
+    font-size: 14px;
+    color: $grey;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+  .sizes {
+    position: static;
+    margin-top: 23px;
+    span {
+      margin: 4px 10px 7px 0;
+      float: left;
+    }
+  }
+}
+
+//сдесь перед класом пишешь свой клас родительский
+.spinner-product .ui-spinner {
+  overflow: inherit !important;
+}
+
+.spinner-product .ui-spinner.ui-widget.ui-widget-content.ui-corner-all {
+  border-radius: inherit;
+  width: 55px;
+  height: 30px;
+  border: 1px solid #d3d7e0;
+}
+
+.spinner-product .ui-spinner a.ui-spinner-button {
+  border-radius: initial;
+  position: absolute;
+  right: -25px;
+}
+
+.spinner-product .ui-state-default,
+.spinner-product .ui-widget-content .ui-state-default,
+.spinner-product .ui-widget-header .ui-state-default {
+  border: none !important;
+
+  font-weight: normal;
+  color: #555555;
+  margin-bottom: -2px;
+}
+
+.spinner-product .ui-spinner-input {
+  border: none;
+  background: none;
+  padding: 0;
+  margin: -3px 0 0 0 !important;
+  width: 55px;
+  text-align: center;
+  height: 30px;
+  outline: none;
+  color: #555555;
+  font-size: 12px !important;
+}
+
+.spinner-product .ui-spinner-button.ui-spinner-up.ui-corner-tr.ui-button.ui-widget.ui-state-default.ui-button-text-only {
+  border: none !important;
+  background: url('../images/sprite.png');
+  height: 18px;
+  width: 18px;
+  margin-bottom: -9px;
+  cursor: pointer;
+}
+
+.spinner-product .ui-spinner-button.ui-spinner-down.ui-corner-br.ui-button.ui-widget.ui-state-default.ui-button-text-only {
+  background: url('../images/sprite.png') 0 -15px;
+  height: 15px;
+  width: 18px;
+  cursor: pointer;
+}
+
+.spinner-product .ui-spinner .ui-icon {
+  position: relative;
+}
+
+.product {
+  border-bottom: 1px solid #e8e8e8;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+.price_this_product {
+  .price-of-product {
+    font-size: 14px;
+    color: $blue;
+    float: left;
+    margin-right: 5px;
+  }
+  .currency-product {
+    font-size: 14px;
+    color: $grey;
+    text-transform: uppercase;
+    float: left;
+  }
+}
+
+.remove-product {
+  display: block;
+  float: right;
+  cursor: pointer;
+}
+
+.total-amount {
+  overflow: hidden;
+  background: #fafafa;
+  padding: 20px;
+  .title-payment {
+    font-size: 12px;
+    color: #959595;
+    text-transform: uppercase;
+  }
+  .currency-product {
+    font-size: 12px;
+    color: #959595;
+    text-transform: uppercase;
+    margin-top: 6px;
+    display: block;
+    float: right;
+  }
+  .total-price {
+    font-size: 26px;
+    color: $blue;
+    margin: -8px 4px 0 0;
+    display: block;
+    float: left;
+  }
+}
+
+.all-cost {
+  .title-price {
+    font-size: 12px;
+    color: #959595;
+    text-transform: uppercase;
+  }
+  .price-prod {
+    font-size: 12px;
+    color: $grey;
+    text-transform: uppercase;
+  }
+  .payment_amount {
+    color: #959595;
+    font-size: 12px;
+  }
+}
+.form-order{
+  float: right;
+  background: $blue;
+  border: none;
+  outline: none;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 16px;
+  text-align: center;
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  cursor: pointer;
+}
+.discount {
+  .title-discount {
+    font-size: 12px;
+    color: #959595;
+    text-transform: uppercase;
+  }
+  .sum-d {
+    font-size: 12px;
+    color: $grey;
+    text-transform: uppercase;
+  }
+  .currency-p {
+    @extend .sum-d;
+  }
+}
+
+.fill-form {
+  overflow: hidden;
+  .title-form {
+    display: block;
+    font-size: 24px;
+    color: #4e4e4e;
+    text-transform: uppercase;
+    margin-top: 40px;
+  }
+  .form-group {
+    position: relative;
+    label {
+      display: block;
+      font-size: 12px;
+      color: #959595;
+      text-transform: uppercase;
+      margin: 20px 0 10px 0;
+    }
+    input {
+      width: 95%;
+      height: 40px;
+      border: 1px solid #e8e8e8;
+      outline: none;
+      padding: 0 40px;
+    }
+    textarea {
+      width: 100%;
+      resize: none;
+      height: 124px;
+      border: 1px solid #e8e8e8;
+    }
+  }
+}
+
+.confirmation {
+  margin-top: 35px;
+  font-size: 12px;
+  color: #959595;
+  a {
+    display: block;
+    margin-top: 8px;
+    color: $dark-grey;
+  }
+}
+
+.checkout-order {
+  float: right;
+  background: $blue;
+  color: #ffffff;
+  font-size: 16px;
+  text-transform: uppercase;
+  border: none;
+  outline: none;
+  padding: 0 15px 10px 15px;
+  margin: 23px 0;
+  position: relative;
+  cursor: pointer;
+}
+
+.delivery_block {
+  color: #8c8c8c;
+  font-size: 11px;
+}
+
+.delivery_block .delivery_list {
+  padding: 3px 6px 0 6px;
+  cursor: pointer;
+  margin: 0 20px 0 0;
+  color: #ed4226;
+  border: 1px solid #efefef;
+  width: 95%;
+  z-index: 11;
+  background: #fcfcfc;
+  height: 40px;
+}
+
+.delivery_list #btn {
+  background: url(dropdown.png);
+  width: 17px;
+  height: 18px;
+  float: right;
+}
+
+.delivery_list span {
+  padding: 11px 40px;
+  display: block;
+  color: #959595;
+  font-size: 12px;
+}
+
+.delivery_block ul.cities_list {
+  margin-top: 0px;
+  z-index: 10;
+  background: #fcfcfc;
+  position: absolute;
+  width: 95%;
+  padding: 0;
+  border: 1px solid #eee;
+  border-top: none;
+  display: none;
+}
+
+ul.cities_list li {
+  padding: 6px 9px;
+  list-style-type: none;
+}
+
+ul.cities_list li:hover {
+  cursor: pointer;
+  background: #fff;
+}
+
+.delivery_block .delivery_text {
+  padding: 3px 5px;
+  margin: 5px 0 0 3px;
+}
+
+.remove-all-products {
+  top: -26px;
+  cursor: pointer;
+}
+
+.all_for_goods {
+  float: right;
+}

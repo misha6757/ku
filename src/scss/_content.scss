@@ -1,0 +1,149 @@
+@import "base";
+
+main.content {
+  background: $light-grey-white;
+  overflow: hidden;
+  padding: 0 30px 35px 30px;
+  .inner-content {
+    background: #ffffff;
+    .b-outer {
+      overflow: hidden;
+      padding: 30px;
+      .b-name-page {
+        overflow: hidden;
+        margin: 0 0 30px 0;
+        .title-page {
+          text-transform: uppercase;
+          float: left;
+          width: 50%;
+          font-size: 24px;
+          color: $dark-grey;
+        }
+        .socials {
+          float: right;
+          width: 50%;
+          text-align: right;
+          .vk{
+            position: relative;
+            display: inline-block;
+            background: url('../images/sprite.png') -32px -32px;
+            height: 13px;
+            width: 18px;
+          }
+          .twitter{
+            position: relative;
+            display: inline-block;
+            background: url('../images/sprite.png') -57px -32px;
+            height: 13px;
+            width: 18px;
+          }
+          .instagram{
+            position: relative;
+            display: inline-block;
+            background: url('../images/sprite.png') -81px -32px;
+            height: 13px;
+            width: 18px;
+          }
+          .fb{
+            position: relative;
+            display: inline-block;
+            background: url('../images/sprite.png') -104px -32px;
+            height: 13px;
+            width: 18px;
+          }
+          .g+{
+            position: relative;
+            display: inline-block;
+            background: url('../images/sprite.png') -126px -32px;
+            height: 13px;
+            width: 18px;
+          }
+          .p{
+            position: relative;
+            display: inline-block;
+            background: url('../images/sprite.png') -150px -32px;
+            height: 13px;
+            width: 18px;
+          }
+        }
+        .add_review {
+          float: right;
+          width: 50%;
+          text-align: right;
+          a.link-add_r {
+            color: #4e4e4e;
+            font-size: 12px;
+            padding: 5px 7px;
+            text-decoration: none;
+            border: 1px solid #4e4e4e;
+            display: block;
+            width: 100px;
+            float: right;
+            cursor: pointer;
+          }
+        }
+      }
+
+      .inner-page {
+        overflow: hidden;
+      }
+    }
+
+  }
+}
+.contacts {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  overflow: hidden;
+  margin-bottom: 40px;
+  .b-address {
+    width: 33%;
+    color: #999999;
+    font-size: 13px;
+    span {
+      display: block;
+      color: $dark-grey;
+      font-size: 13px;
+      margin: 10px 15px 0 15px;
+      position: relative;
+      &::after{
+        position: absolute;
+        content: '';
+        height: 15px;
+        width: 13px;
+        background: url("../images/sprite.png") -98px 2px;
+        top: 0;
+        left: -15px;
+      }
+    }
+  }
+  .b-time-work {
+    width: 33%;
+    color: #999999;
+    font-size: 13px;
+    span {
+      display: block;
+      color: $dark-grey;
+      font-size: 13px;
+      margin-top: 10px;
+    }
+  }
+  .b-contacts {
+    width: 33%;
+    color: #999999;
+    font-size: 13px;
+    padding-left: 5%;
+    span {
+      display: block;
+      color: $dark-grey;
+      font-size: 13px;
+      float: left;
+      width: 50%;
+      margin-top: 10px;
+    }
+  }
+}
+.product-in-basket{
+  display: none;
+}

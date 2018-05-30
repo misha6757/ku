@@ -1,0 +1,68 @@
+.b-photos {
+  width: 100%;
+  overflow: hidden;
+  .photo-1 {
+    width: 100%;
+    float: left;
+    background: url("../images/img_1.png") 70% 18px no-repeat, #dce0e8;
+    .inner-block {
+      padding-left: 30px;
+      .title-clothes {
+        display: block;
+        font-size: 15px;
+        color: $grey;
+        margin: 56px 0 26px;
+      }
+      .text-1 {
+        display: block;
+        font-family: $f-sS;
+        font-size: 41px;
+        line-height: 0.8;
+        color: $grey;
+        text-transform: uppercase;
+      }
+      .text-2 {
+        display: block;
+        color: $blue;
+      }
+      .text-3 {
+        color: $grey;
+        margin: 16px 0 42px;
+        font-size: 15px;
+        width: 125px;
+        display: block;
+      }
+      .text-4 {
+        color: $grey-text-in-block-photo;
+        font-size: 15px;
+        display: block;
+        margin-bottom: 60px;
+        width: 165px;
+        height: 45px;
+      }
+      .more {
+        display: block;
+        margin-bottom: 42px;
+        color: $grey-border-block-photo-links;
+        border: 2px solid $grey-border-block-photo-links;
+        font-size: 14px;
+        padding: 10px 20px;
+        width: 30%;
+        text-align: center;
+        text-decoration: none;
+        &:hover{
+          background: $blue;
+          color: #ffffff;
+          border: 2px solid transparent;
+          transition: 0.5s;
+        }
+      }
+    }
+
+  }
+
+  .photo-2 {
+    @extend .photo-1;
+    background: url("../images/img_2.png") 70% 18px no-repeat, #dce0e8;
+  }
+}

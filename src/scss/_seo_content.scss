@@ -1,0 +1,20 @@
+.b-bottom {
+  background: #ffffff;
+  padding: 25px 30px;
+  .subtitle {
+    text-align: center;
+    color: $grey;
+    font-size: 24px;
+    text-transform: uppercase;
+    margin-bottom: 28px;
+  }
+  .subtitle-l {
+    @extend .subtitle;
+    text-align: left;
+  }
+  .about {
+    color: $grey-text-in-block-photo;
+    font-size: 13px;
+    line-height: 1.3;
+  }
+}

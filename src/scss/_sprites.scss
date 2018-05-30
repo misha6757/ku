@@ -1,0 +1,253 @@
+.sprites {
+  position: relative;
+  display: inline-block;
+  background: url('../images/sprite.png');
+}
+
+.sprites-btn-plus {
+  height: 18px;
+  width: 18px;
+}
+
+.sprites-btn-minus {
+  background-position: 0 -15px;
+  height: 18px;
+  width: 18px;
+}
+
+.sprites-btn-close {
+  background-position: -15px 0;
+  height: 18px;
+  width: 18px;
+}
+
+.sprites-btn-smallall-basket {
+  background-position: -15px -15px;
+  height: 18px;
+  width: 18px;
+}
+
+.sprites-card {
+  background-position: -34px -3px;
+  height: 18px;
+  width: 30px;
+}
+
+.sprites-tel {
+  background-position: -65px -3px;
+  height: 13px;
+  width: 14px;
+}
+
+.sprites-search {
+  height: 16px;
+  width: 14px;
+  background-position: -129px -94px;
+}
+
+.sprites-full-lock {
+  height: 16px;
+  width: 14px;
+  background-position: -144px -94px;
+}
+
+.sprites-big-basket {
+  height: 65px;
+  width: 48px;
+  background-position: -168px -82px;
+}
+
+.sprites-arrow-left-slide {
+  height: 20px;
+  width: 14px;
+  background-position: -169px -183px;
+}
+
+.sprites-arrow-right-slide {
+  height: 20px;
+  width: 14px;
+  background-position: -184px -182px;
+}
+
+.sprites-current-element-arrow {
+  height: 9px;
+  width: 16px;
+  background-position: 136px -23px;
+}
+
+.sprites-arrow-to-top {
+  height: 11px;
+  width: 17px;
+  background-position: -78px -297px;
+}
+
+.sprites-arrow-menu {
+  height: 8px;
+  width: 10px;
+  background-position: -135px -113px;
+}
+
+.sprites-calendar {
+  height: 14px;
+  width: 13px;
+  background: url("../images/sprite.png") -99px -16px;
+  top: 2px;
+  margin-right: 5px;
+}
+
+.sprites-close {
+  height: 15px;
+  width: 15px;
+  background: url("../images/sprite.png") -263px -279px;
+  right: 5px;
+  top: 1px;
+  position: absolute;
+}
+
+.sprites-user {
+  height: 14px;
+  width: 13px;
+  background-position: -114px -16px;
+  left: 15px;
+  top: 44px;
+  position: absolute;
+}
+
+.sprites-message {
+  height: 14px;
+  width: 13px;
+  background-position: -130px -16px;
+  left: 15px;
+  top: 7px;
+  position: absolute;
+}
+
+.sprites-email {
+  height: 12px;
+  width: 15px;
+  background-position: -113px -48px;
+  left: 15px;
+  top: 44px;
+  position: absolute;
+}
+
+.sprites-email-2 {
+  height: 12px;
+  width: 15px;
+  background-position: -113px -48px;
+  left: 15px;
+  top: 14px;
+  position: absolute;
+}
+
+.sprites-lock-pass {
+  height: 12px;
+  width: 15px;
+  background-position: -128px -48px;
+  left: 15px;
+  top: 44px;
+  position: absolute;
+}
+
+.sprites-lock-confirm-pass {
+  height: 12px;
+  width: 15px;
+  background-position: -143px -48px;
+  left: 15px;
+  top: 44px;
+  position: absolute;
+}
+
+.sprites-in-basket {
+  position: absolute;
+  content: '';
+  background-position: -168px -54px;
+  top: 9px;
+  margin-right: 5px;
+  height: 29px;
+  width: 22px;
+}
+
+.sprites-purse {
+  content: '';
+  height: 28px;
+  width: 30px;
+  background-position: -267px -97px;
+  top: 9px;
+  left: 57px;
+  float: left;
+}
+
+.sprites-remove {
+  height: 35px;
+  width: 11px;
+  background-position: -187px -279px;
+}
+
+.sprites-remove-product {
+  height: 13px;
+  width: 13px;
+  background-position: -186px -166px;
+}
+
+.sprites-user-1 {
+  height: 19px;
+  width: 17px;
+  background-position: -217px -45px;
+  left: 15px;
+  top: 35px;
+  position: absolute;
+}
+
+.sprites-phone {
+  height: 19px;
+  width: 15px;
+  background-position: -232px -45px;
+  left: 15px;
+  top: 35px;
+  position: absolute;
+}
+
+.sprites-mail-2 {
+  height: 19px;
+  width: 17px;
+  background-position: -247px -45px;
+  left: 15px;
+  top: 35px;
+  position: absolute;
+}
+
+.sprites-box {
+  height: 19px;
+  width: 17px;
+  background-position: -263px -45px;
+  left: 15px;
+  top: 35px;
+  position: absolute;
+}
+
+.sprites-long-arrow {
+  height: 30px;
+  width: 26px;
+  background-position: -191px -199px;
+  margin-left: 10px;
+  bottom: -6px;
+}
+
+.sprites-mob {
+  background-position: -65px -43px;
+  height: 20px;
+  width: 14px;
+  left: 17px;
+  top: 8px;
+  position: absolute;
+}
+
+.sprites-trigram-catalog{
+  background-position: -129px -128px;
+  height: 17px;
+  width: 19px !important;
+  top: 3px;
+  left: 10px;
+  z-index: 3;
+}

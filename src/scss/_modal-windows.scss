@@ -1,0 +1,338 @@
+.popup {
+  position: relative;
+  width: 340px;
+  top: 50%;
+  left: 50%;
+  background: #ffffff;
+  margin: -195px 0 0 -170px;
+  padding: 40px 35px 32px 35px;
+}
+
+.overflow {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 100;
+  background: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
+.overlay {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 100;
+  background: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
+.reviews {
+  position: relative;
+  height: 560px;
+  width: 340px;
+  top: 50%;
+  left: 50%;
+  background: #ffffff;
+  margin: -280px 0 0 -170px;
+  padding: 40px 35px 32px 35px;
+  .close {
+    text-decoration: none;
+    color: white;
+    position: absolute;
+    top: -40px;
+    right: 0;
+    cursor: pointer;
+    padding-right: 32px;
+  }
+  label {
+    font-size: 24px;
+    color: #333333;
+  }
+  form {
+    .form-group {
+      position: relative;
+      input {
+        width: 100%;
+        background: #f8f8f8;
+        border: none;
+        margin: 30px 0 20px 0;
+        height: 40px;
+        padding: 5px 35px;
+        color: #9da2a8;
+        outline: none;
+      }
+      textarea {
+        width: 100%;
+        resize: none;
+        background: #f8f8f8;
+        border: none;
+        height: 140px;
+        padding: 5px 35px;
+        color: #9da2a8;
+        outline: none;
+        margin-bottom: 20px;
+      }
+    }
+    .send {
+      background: $red;
+      color: #ffffff;
+      font-size: 13px;
+      text-transform: uppercase;
+      width: 140px;
+      height: 40px;
+      border: none;
+      outline: none;
+      float: right;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+  }
+}
+
+.block-registration {
+  .close {
+    text-decoration: none;
+    color: white;
+    position: absolute;
+    top: -40px;
+    right: 0;
+    cursor: pointer;
+    padding-right: 32px;
+  }
+  label {
+    font-size: 24px;
+    color: #333333;
+  }
+  form {
+    .form-group {
+      position: relative;
+      input {
+        width: 100%;
+        background: #f8f8f8;
+        border: none;
+        height: 40px;
+        padding: 5px 35px;
+        color: #9da2a8;
+        outline: none;
+      }
+      textarea {
+        width: 100%;
+        resize: none;
+        background: #f8f8f8;
+        border: none;
+        height: 140px;
+        padding: 5px 35px;
+        color: #9da2a8;
+        outline: none;
+        margin-bottom: 20px;
+      }
+    }
+
+  }
+  .items {
+    overflow: hidden;
+    .entry {
+      font-size: 24px;
+      color: #b4b4b4;
+      text-transform: uppercase;
+      display: block;
+      float: left;
+      text-decoration: none;
+      cursor: pointer;
+    }
+    .reg {
+      font-size: 24px;
+      color: #333333;
+      text-transform: uppercase;
+      display: block;
+      float: right;
+      text-decoration: none;
+      cursor: pointer;
+    }
+  }
+
+  .form-group {
+    input {
+      margin: 30px 0 0 0;
+    }
+  }
+  .registration {
+    background: $blue;
+    color: #ffffff;
+    font-size: 13px;
+    text-transform: uppercase;
+    width: 100%;
+    height: 40px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 30px;
+  }
+}
+
+.block-entry {
+  .close {
+    text-decoration: none;
+    color: white;
+    position: absolute;
+    top: -40px;
+    right: 0;
+    cursor: pointer;
+    padding-right: 32px;
+  }
+  label {
+    font-size: 24px;
+    color: #333333;
+  }
+  form {
+    .form-group {
+      position: relative;
+      input {
+        width: 100%;
+        background: #f8f8f8;
+        border: none;
+        height: 40px;
+        padding: 5px 35px;
+        color: #9da2a8;
+        outline: none;
+      }
+      textarea {
+        width: 100%;
+        resize: none;
+        background: #f8f8f8;
+        border: none;
+        height: 140px;
+        padding: 5px 35px;
+        color: #9da2a8;
+        outline: none;
+        margin-bottom: 20px;
+      }
+    }
+
+  }
+
+
+  .form-group {
+    input {
+      margin: 30px 0 0 0;
+    }
+  }
+  .registration {
+    background: $blue;
+    color: #ffffff;
+    font-size: 13px;
+    text-transform: uppercase;
+    width: 100%;
+    height: 40px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 30px;
+  }
+}
+.items {
+  overflow: hidden;
+  .entry {
+    font-size: 24px;
+    color: #b4b4b4;
+    text-transform: uppercase;
+    display: block;
+    float: left;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .reg {
+    font-size: 24px;
+    color: #333333;
+    text-transform: uppercase;
+    display: block;
+    float: right;
+    text-decoration: none;
+    cursor: pointer;
+  }
+}
+.popup-basket {
+  width: 90%;
+  position: fixed;
+  top: 50%;
+  margin: -20% 5% 0 5%;
+  background: #ffffff;
+  padding: 30px;
+  z-index: 1021;
+  .photo-product {
+    figure {
+      height: 90px;
+      width: 90px;
+    }
+  }
+
+}
+
+.call {
+  position: relative;
+  height: 244px;
+  width: 340px;
+  top: 50%;
+  left: 50%;
+  background: #ffffff;
+  margin: -122px 0 0 -170px;
+  padding: 40px 35px 32px 35px;
+  .close {
+    text-decoration: none;
+    color: white;
+    position: absolute;
+    top: -40px;
+    right: 0;
+    cursor: pointer;
+    padding-right: 32px;
+  }
+  label {
+    font-size: 24px;
+    color: #333333;
+  }
+  form {
+    .form-group {
+      position: relative;
+      input {
+        width: 100%;
+        background: #f8f8f8;
+        border: none;
+        margin: 0 0 20px 0;
+        height: 40px;
+        padding: 5px 35px;
+        color: #9da2a8;
+        outline: none;
+      }
+      textarea {
+        width: 100%;
+        resize: none;
+        background: #f8f8f8;
+        border: none;
+        height: 140px;
+        padding: 5px 35px;
+        color: #9da2a8;
+        outline: none;
+        margin-bottom: 20px;
+      }
+    }
+    .request_call {
+      background: $blue;
+      color: #ffffff;
+      font-size: 13px;
+      text-transform: uppercase;
+      width: 100%;
+      height: 40px;
+      border: none;
+      outline: none;
+      float: right;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+  }
+}

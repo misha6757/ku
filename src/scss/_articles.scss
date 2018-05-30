@@ -1,0 +1,65 @@
+.articles {
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  .article {
+    overflow: hidden;
+    border: 1px solid #f2f5fb;
+    width: 30%;
+    float: left;
+    margin: 0 1.6% 30px 1.6%;
+    .item-article {
+      margin-bottom: 18px;
+      img {
+        margin: 0 auto;
+        display: block;
+        text-align: center;
+        width: 100%;
+      }
+      .title-article {
+        display: block;
+        font-size: 13px;
+        color: #6c6c6e;
+        text-transform: uppercase;
+        margin: 20px 30px;
+        width: 205px;
+        text-align: left;
+        text-decoration: none;
+        &:hover{
+          color: $blue;
+        }
+      }
+      .short_descr {
+        text-align: left;
+        margin: 0 30px;
+        display: block;
+        font-size: 12px;
+        color: #acaeb1;
+      }
+    }
+    .b-inform {
+      border-top: 1px solid #f2f5fb;
+      padding: 5px 30px;
+      overflow: hidden;
+      .more {
+        width: 50%;
+        float: left;
+        font-size: 12px;
+        color: #6c6c6e;
+        text-decoration: none;
+        &:hover{
+          color: $blue;
+        }
+      }
+      .data {
+        position: relative;
+        width: 50%;
+        float: right;
+        text-align: right;
+        font-size: 12px;
+        color: #acaeb1;
+      }
+    }
+  }
+}

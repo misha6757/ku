@@ -1,0 +1,109 @@
+.menu {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 15px 0;
+  margin: 0;
+  background: $light-grey-white;
+  .menu-center {
+    display: none;
+  }
+  li {
+    position: relative;
+    list-style: none;
+    float: left;
+    padding-right: 20px;
+    .current {
+      &:after {
+        content: '';
+        position: absolute;
+        height: 9px;
+        display: inline-block;
+        width: 16px;
+        background: url("../images/sprite.png") 136px -23px;
+        top: 5px;
+        margin-left: 6px;
+      }
+    }
+    a {
+      text-decoration: none;
+      text-transform: uppercase;
+      color: $grey;
+      font-size: 15px;
+    }
+    .dropdown {
+      background: $dark-grey;
+      position: absolute;
+      color: #fff;
+      margin-top: 15px;
+      border-top: 2px solid $blue;
+      z-index: 5;
+      min-width: 100%;
+      display: none;
+      .subnav {
+        padding: 0 8px 0 40px;
+        white-space: nowrap;
+        li {
+          display: block;
+          float: none;
+          position: relative;
+          padding: 5px 3px 15px 0;
+          a {
+            color: #979797;
+            text-transform: none;
+            &:hover {
+              color: #ffffff;
+            }
+          }
+          &:before {
+            content: '';
+            position: absolute;
+            height: 10px;
+            display: inline-block;
+            width: 8px;
+            background: url("../images/sprite.png") 119px -22px;
+            top: 9px;
+            left: -32px;
+          }
+        }
+      }
+    }
+    .dropdown::before {
+      content: '';
+      position: absolute;
+      left: 43%;
+      top: -20px;
+      border: 10px solid transparent;
+      border-bottom: 10px solid $blue;
+    }
+  }
+  li:last-child {
+    padding-right: 20px;
+  }
+}
+.menu li:last-child .dropdown {
+  right: 0;
+}
+.sprites.arrow {
+  display: none;
+}
+
+#menu-center {
+  display: none;
+}
+
+.arr-transform {
+  display: block;
+  height: 8px;
+  width: 10px;
+  background-position: -135px -113px;
+  position: absolute;
+  right: 7%;
+  top: 15px;
+  padding: 10px;
+}
+.menu-center{
+  span{
+    display: none;
+  }
+}

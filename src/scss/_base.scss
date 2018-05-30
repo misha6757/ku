@@ -1,0 +1,29 @@
+@charset "windows-1251";
+
+/***COLORS***/
+$dark-grey: #363636;
+$grey-link: #828282; //color of links in header
+$light-grey: #cdcdcd;
+$grey: #4e4e4e;
+$blue: #568dc6;
+$light-grey-white: #f2f5fa;
+$grey-text-in-block-photo: #999999;
+$grey-border-block-photo-links: #5c5c5c;
+$red: #f04e2a;
+$orange :#f69679;
+$yellow: #fff799;
+$light-green: #c4df9b;
+$green: #82ca9c;
+$light-blue: #7da7d9;
+$violet: #bd8cbf;
+$dark-blue: #7aa1cc;
+$light-grey-sque: #e7e7e7;
+$dark-grey-sque: #606060;
+$dark-violet: #504351;
+$brown: #c49d49;
+$dark-pink: #a85077;
+
+/***FONTS***/
+@import url(https://fonts.googleapis.com/css?family=Roboto+Condensed&subset=latin,cyrillic-ext);
+$f-rc:'Roboto Condensed', sans-serif;
+$f-sS:Sitka Subheading

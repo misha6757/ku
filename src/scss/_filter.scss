@@ -1,0 +1,441 @@
+.b-filter {
+  padding: 8px 8px 0 0;
+  border-right: 1px solid #e4e7ed;
+  border-bottom: 1px solid #e4e7ed;
+  overflow: hidden;
+  .ui-widget-content {
+    background: #778493;
+    border: none;
+  }
+  .ui-widget-header {
+    background: $blue;
+    border: none;
+  }
+  .ui-slider-horizontal {
+    height: .4em;
+    width: 98%;
+    margin: 15px auto 0 auto;
+  }
+  .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+    border: none;
+    background: #e6e6e6 url("../images/img_5.png") 50% 50% repeat-x;
+    font-weight: normal;
+    color: #555555;
+    outline: none;
+  }
+  .ui-slider .ui-slider-handle {
+    position: absolute;
+    z-index: 2;
+    width: 1em;
+    height: 1em;
+  }
+  #amount {
+    margin: 20px 0 15px 0;
+  }
+}
+
+p {
+  margin-top: 23px;
+  label {
+    font-size: 13px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+}
+
+.size-range {
+  div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin: 25px 0;
+  }
+  label.size {
+    cursor: pointer;
+    position: relative;
+    padding-left: 25px;
+    margin-right: 15px;
+    font-size: 13px;
+  }
+
+  input[type=checkbox] {
+    display: none;
+  }
+  label.size:before {
+    content: "";
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin-right: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 1px;
+    border: 1px solid #e5e5e5;
+    background-color: #ffffff;
+  }
+
+  .size-range label.size {
+    margin-bottom: 10px;
+  }
+  .size-range label.size:before {
+    border-radius: 3px;
+  }
+
+  input[type=checkbox]:checked + label.size:before {
+    content: "\2713";
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, .2);
+    font-size: 15px;
+    color: $blue;
+    text-align: center;
+    line-height: 10px;
+  }
+  a {
+    text-decoration: none;
+    color: #c0c0c0;
+    font-size: 12px;
+    text-transform: uppercase;
+    float: left;
+    display: block;
+    margin-bottom: 10px;
+    &:hover {
+      color: $blue;
+      label {
+        &.size {
+          color: $blue;
+        }
+      }
+    }
+  }
+}
+
+.color-range {
+  div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin: 40px 0 0 0;
+  }
+  label.size {
+    cursor: pointer;
+    position: relative;
+    margin-right: 29px;
+    font-size: 13px;
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+
+  input[type=checkbox] {
+    display: none;
+  }
+  label.size.orange:before {
+    content: "";
+    display: inline-block;
+    border-radius: 5px;
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 1px;
+    background-color: $orange;
+  }
+  label.size.yellow:before {
+    content: "";
+    display: inline-block;
+    border-radius: 5px;
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 1px;
+    background-color: $yellow;
+  }
+  label.size.light-green:before {
+    content: "";
+    display: inline-block;
+    border-radius: 5px;
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 1px;
+    background-color: $light-green;
+  }
+  label.size.green:before {
+    content: "";
+    display: inline-block;
+    border-radius: 5px;
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 1px;
+    background-color: $green;
+  }
+  label.size.light-blue:before {
+    content: "";
+    display: inline-block;
+    border-radius: 5px;
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 1px;
+    background-color: $light-blue;
+  }
+  label.size.violet:before {
+    content: "";
+    display: inline-block;
+    border-radius: 5px;
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 1px;
+    background-color: $violet;
+  }
+  label.size.dark-blue:before {
+    content: "";
+    display: inline-block;
+    border-radius: 5px;
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 1px;
+    background-color: $dark-blue;
+  }
+  label.size.light-grey-sque:before {
+    content: "";
+    display: inline-block;
+    border-radius: 5px;
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 1px;
+    background-color: $light-grey-sque;
+  }
+  label.size.dark-grey-sque:before {
+    content: "";
+    display: inline-block;
+    border-radius: 5px;
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 1px;
+    background-color: $dark-grey-sque;
+  }
+  .size-range label.size {
+    margin-bottom: 10px;
+  }
+  .size-range label.size:before {
+    border-radius: 3px;
+  }
+
+  input[type=checkbox]:checked + label.size:before {
+    content: "\2713";
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, .2);
+    font-size: 15px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 25px;
+  }
+  a {
+    text-decoration: none;
+    color: #c0c0c0;
+    font-size: 12px;
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 20px;
+  }
+
+}
+
+.material-range {
+  div {
+    margin: 25px 0 35px 0;
+  }
+  label.size {
+    cursor: pointer;
+    position: relative;
+    padding-left: 25px;
+    margin-right: 15px;
+    font-size: 13px;
+    color: #606060;
+  }
+
+  input[type=checkbox] {
+    display: none;
+  }
+  label.size:before {
+    content: "";
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin-right: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 1px;
+    border: 1px solid #e5e5e5;
+    background-color: #ffffff;
+  }
+
+  .size-range label.size {
+    margin-bottom: 10px;
+  }
+  .size-range label.size:before {
+    border-radius: 3px;
+  }
+
+  input[type=checkbox]:checked + label.size:before {
+    content: "\2713";
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, .2);
+    font-size: 15px;
+    color: $blue;
+    text-align: center;
+    line-height: 10px;
+  }
+  a {
+    text-decoration: none;
+    color: #c0c0c0;
+    font-size: 12px;
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 10px;
+    &:hover {
+      color: $blue;
+      label {
+        &.size {
+          color: $blue;
+        }
+      }
+    }
+
+  }
+  .quantity {
+    float: right;
+    padding-right: 10%;
+  }
+}
+
+.check-filter {
+  .apply {
+    float: left;
+    background: $blue;
+    color: #ffffff;
+    height: 32px;
+    line-height: 32px;
+    font-size: 12px;
+    text-transform: uppercase;
+    border: none;
+    width: 57%;
+    cursor: pointer;
+  }
+  .reset {
+    float: right;
+    background: $light-grey-sque;
+    color: #ffffff;
+    height: 32px;
+    line-height: 32px;
+    font-size: 12px;
+    text-transform: uppercase;
+    border: none;
+    width: 40%;
+    cursor: pointer;
+  }
+}
+
+.fliter-sort {
+  overflow: hidden;
+  .fresh-products {
+    float: left;
+    font-size: 12px;
+    a.fresh-receipt {
+      color: $grey;
+      display: block;
+      float: left;
+      text-decoration: none;
+    }
+    ul {
+      position: relative;
+      float: left;
+      padding: 0 0 0 10px;
+      margin: 0;
+      li {
+        list-style: none;
+        float: left;
+        padding: 0 7px;
+        a {
+          color: $blue;
+          text-decoration: none;
+        }
+        &:before {
+          position: relative;
+          content: '|';
+          left: -7px;
+        }
+      }
+    }
+
+  }
+  .show_products {
+    float: right;
+    text-align: right;
+    padding-right: 1%;
+    font-size: 12px;
+    span {
+      color: #b1b1b1;
+      a {
+        color: $blue;
+        text-decoration: none;
+      }
+    }
+  }
+  .title-category {
+    margin: 0;
+    font-weight: normal;
+  }
+}
+
+.filter-mob {
+  display: none;
+}
+
+.check-filter {
+  margin-bottom: 4px;
+  overflow: hidden;
+}
+
+.sliderCont {
+  margin-bottom: 20px;
+  padding: 0 4px 0 8px;
+}
+
+#minCost {
+  width: 48%;
+  float: left;
+  outline: none;
+}
+
+#maxCost {
+  width: 48%;
+  float: right;
+  outline: none;
+}
+.main{
+  overflow: hidden;
+}
+.inner-page>.b-gallery{
+  padding: 10px 0;
+}
